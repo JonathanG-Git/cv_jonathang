@@ -1,2 +1,1 @@
-# CV
-CV Groskopf Jonathan
+# CV Groskopf Jonathan
