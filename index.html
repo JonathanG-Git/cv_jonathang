@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>CV Jonathan Groskopf</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/circle.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
@@ -16,14 +17,80 @@
         <nav>
         <div class="nav">
             <div class="navigation">
-                <a class="navItem active" id="moi" href="#">Moi</a>
-                <a class="navItem" id="competences" href="#">Compétences</a>
-                <a class="navItem" id="certifications" href="#">Certifications</a>
+                <a class="navItem active" id="p1" onclick="showPage1()">Moi</a>
+                <a class="navItem" id="p2" onclick="showPage2()">Compétences</a>
+                <a class="navItem" id="p3" onclick="showPage3()">Certifications</a>
+                <a class="navItem" id="p4" onclick="showPage4()">Projets</a>
             </div>
         </div>
         </nav>
+        <div id="content">
+            <div id="page1" class="article">
+                <h1 style="font-size: 100px; text-align: center; font-weight: bolder; margin-top: 100px;color: gray;">/!\ Site en construction /!\</h1>
+            </div>
+            <div id="page2" class="article">
+                <h1>Mes Compétences :</h1>
+                <div style="display: flex; margin-top: 50px;">
+                        <div style="display: flex; flex-direction: column; width: 33%;">
+                            <h2 style="text-align: center; margin-bottom: 50px;">Langues :</h2>
+                        </div>
+                    <div style="width: 34%;">
+                        <h2 style="text-align: center; margin-bottom: 50px;">Développement :</h2>
+                        <div class="progressBar">
+                            <div class="progressTest"></div>
+                        </div>
+                    </div>
+                    <div style="width: 33%;">
+                        <h2 style="text-align: center; margin-bottom: 50px;">Logiciels :</h2>
+
+                    </div>
+                </div>
+            </div>
+            <div id="page3" class="article">
+                <h1>Certifications OpenClassrooms :</h1>
+                <div class="certifContainer">
+                    <div id="certifHtmlCss">
+                        <h2 class="certifTitle" id="titleCertifHtmlCss">HTML5 et CSS3</h2>
+                        <img id="myImg" class="img" src="./assets/images/html-css.png" alt="Apprenez à créer votre site web avec HTML5 et CSS3" style="width:100%;max-width:300px">
+                    </div>
+                    <div id="certifGit">
+                        <h2 class="certifTitle" id="titleCertifGit">Git</h2>
+                        <img id="myImgGit" class="img" src="./assets/images/git.png" alt="Gérez votre code avec Git et GitHub" style="width:100%;max-width:300px">
+                    </div>
+                    <div id="certifJS1">
+                        <h2 class="certifTitle" id="titleCertifJS1">JavaScript 1</h2>
+                        <img id="myImgJS1" class="img" src="./assets/images/javascript1.png" alt="Apprenez à coder avec JavaScript" style="width:100%;max-width:300px">
+                    </div>
+                    <div id="certifJS2">
+                        <h2 class="certifTitle" id="titleCertifJS2">JavaScript 2</h2>
+                        <img id="myImgJS2" class="img" src="./assets/images/javascript2.png" alt="Créez des pages web interactives avec JavaScript" style="width:100%;max-width:300px">
+                    </div>
+                    <div id="certifPHP">
+                        <h2 class="certifTitle" id="titleCertifPHP">PHP et MySQL</h2>
+                        <img id="myImgPHP" class="img" src="./assets/images/php-mysql.png" alt="Concevez votre site web avec PHP et MySQL" style="width:100%;max-width:300px">
+                    </div>
+                </div>
+            </div>
+            <div id="page4" class="article">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tincidunt libero in auctor bibendum. Praesent risus dolor, luctus nec augue nec, hendrerit scelerisque mauris. Donec fringilla risus nec purus commodo hendrerit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec porta consequat tortor a vehicula. Maecenas nisl nibh, scelerisque sit amet odio quis, viverra sodales turpis. Nulla pulvinar varius orci, vel dignissim justo dignissim vitae. Sed eget odio sit amet ante mollis consequat.</p>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+        
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+        
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
     </div>
     
+    
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
 </html>
