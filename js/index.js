@@ -3,10 +3,12 @@ var page1 = document.getElementById("p1");
 var page2 = document.getElementById("p2");
 var page3 = document.getElementById("p3");
 var page4 = document.getElementById("p4");
+var progress = document.getElementsByClassName('progressTest');
+console.log(progress);
 
 captionText= document.getElementById("caption")
 
-showPage1 = function()
+function showPage1()
 {
     content.setAttribute("class", "");
     page1.classList.add('active');
@@ -14,7 +16,7 @@ showPage1 = function()
     page3.classList.remove('active');
     page4.classList.remove('active');
 }
-showPage2 = function()
+function showPage2()
 {
     content.setAttribute("class", "showPage2");
     page1.classList.remove('active');
@@ -22,7 +24,7 @@ showPage2 = function()
     page3.classList.remove('active');
     page4.classList.remove('active');
 }
-showPage3 = function()
+function showPage3()
 {
     content.setAttribute("class", "showPage3");
     page1.classList.remove('active');
@@ -30,7 +32,7 @@ showPage3 = function()
     page3.classList.add('active');
     page4.classList.remove('active');
 }
-showPage4 = function()
+function showPage4()
 {
     content.setAttribute("class", "showPage4");
     page1.classList.remove('active');
@@ -39,8 +41,12 @@ showPage4 = function()
     page4.classList.add('active');
 }
 
+
+
   //jquery
   $(document).ready(function(){
+
+    //? Modal
 
     //quand on clique sur une image
     $("img").on('click', function(){
@@ -57,6 +63,14 @@ showPage4 = function()
     //si on clique sur le bouton, on ferme la modal en modifiant le css
     $(".close").on("click", function(){
         $("#myModal").css("display", "none");
-    });		
+    });	
+    
+    //?M Progress bar
+
+    $('#p2').on('click', function(){
+            $('.progressTest').addClass('progressTestAfter');
+    })
+
+    //? Navbar
 
 });
