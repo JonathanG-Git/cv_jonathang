@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    <!-- * Header Start * -->
     <div class="page">
       <div class="header">
         <div class="title">
@@ -18,17 +19,22 @@
           <h2 class="subTitle">Développeur web</h2>
         </div>
       </div>
+      <!-- * Navigation Start * -->
       <nav>
         <div class="nav">
           <div class="navigation">
-            <a class="navItem active" id="p1" onclick="showPage1()">Moi</a>
-            <a class="navItem" id="p2" onclick="showPage2()">Compétences</a>
-            <a class="navItem" id="p3" onclick="showPage3()">Certifications</a>
-            <a class="navItem" id="p4" onclick="showPage4()">Projets</a>
+            <a class="navItem active" id="p1">Moi</a>
+            <a class="navItem" id="p2">Compétences</a>
+            <a class="navItem" id="p3">Certifications</a>
+            <a class="navItem" id="p4">Projets</a>
           </div>
         </div>
       </nav>
+      <!-- * Navigation End * -->
+      <!-- * Header End * -->
+      <!-- * Content Start * -->
       <div id="content">
+        <!-- * Page 1 (Moi) Start * -->
         <div id="page1" class="article">
           <h1
             style="font-size: 100px; text-align: center; font-weight: bolder; margin-top: 100px;color: gray;"
@@ -36,6 +42,8 @@
             /!\ Site en construction /!\
           </h1>
         </div>
+        <!-- * Page 1 End * -->
+        <!-- * Page 2 (Compétences) Start * -->
         <div id="page2" class="article">
           <h1>Mes Compétences :</h1>
           <div style="display: flex; margin-top: 50px;">
@@ -136,6 +144,8 @@
             </div>
           </div>
         </div>
+        <!-- * Page 2 End * -->
+        <!-- * Page 3 (Certifications) Start * -->
         <div id="page3" class="article">
           <h1>Certifications OpenClassrooms :</h1>
           <div class="certifContainer">
@@ -201,6 +211,8 @@
             </div>
           </div>
         </div>
+        <!-- * Page 3 End * -->
+        <!-- * Page 4 (Projets) Start * -->
         <div id="page4" class="article">
           <h1>Projets :</h1>
           <div>
@@ -215,18 +227,21 @@
             ></iframe>
           </div>
         </div>
+        <!-- * Page 4 End * -->
       </div>
-      <!-- The Modal -->
+      <!-- * Content End * -->
+      <!-- * Modal Start * -->
       <div id="myModal" class="modal">
-        <!-- The Close Button -->
+        <!-- * Close Button * -->
         <span class="close">&times;</span>
 
-        <!-- Modal Content (The Image) -->
+        <!-- * Modal Content (Image) * -->
         <img class="modal-content" id="img01" />
 
-        <!-- Modal Caption (Image Text) -->
+        <!-- * Modal Caption (Texte) * -->
         <div id="caption"></div>
       </div>
+      <!-- * Modal End * -->
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
